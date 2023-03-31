@@ -2,20 +2,20 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: analysis_yt_data
+    description: "analysis dbt model"
     columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: genre
+        description: "genre of yt channel"
         tests:
           - unique
           - not_null
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
+  - name: yt_model
+    description: "transformation dbt model"
     columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: genre
+        description: "genre of yt channel"
         tests:
           - unique
           - not_null
