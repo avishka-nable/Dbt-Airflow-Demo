@@ -1,26 +1,38 @@
 dbt_demo:
   outputs:
     dev:
-      account: ykzjwal-ar56104
-      database: ANALYTICS
-      password: Kaviandlilo94
+      account: wquvqrj-az75828
+      database: DEMO
+      password: P#ssw0rd
       role: ACCOUNTADMIN
-      schema: PUBLIC
+      schema: DEMO_03142023
       threads: 10
       type: snowflake
-      user: KavindiMudunkotuwa
+      user: AvishkaHashenu
       warehouse: COMPUTE_WH
   target: dev
 dbt_project:
   outputs:
     dev:
-      account: ykzjwal-ar56104
-      database: ANALYTICS
-      password: Kaviandlilo94
+      account: wquvqrj-az75828
+      database: DEMO
+      password: P#ssw0rd
       role: ACCOUNTADMIN
-      schema: PUBLIC
+      schema: DEMO_03142023
       threads: 10
       type: snowflake
-      user: KavindiMudunkotuwa
+      user: AvishkaHashenu
+      warehouse: COMPUTE_WH
+      
+    prod:
+      account: wquvqrj-az75828
+      database: DEMO
+      password: P#ssw0rd
+      role: ACCOUNTADMIN
+      schema: DEMO_03142023
+      threads: 10
+      type: snowflake
+      user: AvishkaHashenu
       warehouse: COMPUTE_WH
   target: dev
+  
