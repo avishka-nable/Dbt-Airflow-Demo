@@ -1,7 +1,5 @@
-{{config(materialized = 'table', table_name = 'aggregate_yt_data')}}
-
 SELECT
-    GENRE,
-    COUNT(ID) as total
-FROM yt_data
-GROUP BY GENRE
+    "Genre",
+    COUNT('ID') as total
+FROM {{ source('yt_csv', 'yt') }}
+GROUP BY 1
