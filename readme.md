@@ -53,32 +53,32 @@ Before running this project, ensure that you have the following prerequisites in
    ```sh
    cd dbt-project
 
-3. Test the database connection and show information for debugging purposes ####
+3. Test the database connection and show information for debugging purposes
    ```sh
    dbt debug
    ```
 
-4. Download dependencies for a project #####
-```sh
-dbt deps
-```
+4. Download dependencies for a project
+   ```sh
+   dbt deps
+   ```
 
 5. Load CSV files into the database #####
-```sh
-dbt seed
-```
+   ```sh
+   dbt seed
+   ```
 This command will load csv files located in the seed-paths directory of this dbt project into your data warehouse.
 
 6. To execute the compiled SQL transformations and materialize the models, use the following command: #####
-```sh
-dbt run
-```
+   ```sh
+   dbt run
+   ```
 Running this command will create or update the tables/views defined in this project. It applies the transformations defined in the models and loads the data into the target database.
 
 ##### If you want to perform a full refresh of the data models, including dropping and recreating the tables/views, use the following command: #####
-```sh
-dbt run --full-refresh
-```
+   ```sh
+   dbt run --full-refresh
+   ```
 This command ensures that the data models reflect the latest state of the source data.
 
 ## Project Structure
