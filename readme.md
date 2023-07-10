@@ -43,3 +43,26 @@ To get started with the project, follow these steps:
 
 4. Access the Airflow UI by visiting http://localhost:8080 in your web browser.
 
+## Project Structure
+
+The project directory has the following structure:
+.
+├── docker-compose.yml
+├── dags
+│   ├── init.py
+│   ├── analysis.py
+│   ├── tranformation.py
+│   └── ...
+├── dbt_project
+│   ├── models
+│   │   ├── analysis
+│   │   └── transformation
+│   └── dbt_project.yml
+│   └── profiles.yml
+
+-**docker-compose.yml**: Defines the services and their configurations for Docker Compose.
+-**dags**: Contains Airflow related files, including DAGs that define the workflows.
+-**dbt_project**: Contains dbt models that define the transformations to be applied on Snowflake data.
+
+
+
