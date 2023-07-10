@@ -116,5 +116,25 @@ The project directory has the following structure:
 4. Start the Airflow scheduler and web server using Docker Compose. Visit http://localhost:8080 in your web browser to access the Airflow UI.
 5. Enable and trigger the desired DAG(s) in the Airflow UI to initiate the dbt transformation process.
 
+## Documentation
+**To generate and view the documentation for this dbt project, follow these steps:**
+##### 1. Generate the documentation by running the following command: #####
+```sh
+dbt docs generate
+```
+This command generates HTML pages documenting the models, tests, and macros in your project.
+#####  2. Serve the documentation locally by running the following command: ##### 
+```sh
+dbt docs serve
+```
+This command starts a local web server to host the documentation. You can access it by opening your browser and visiting the provided URL.
+
+**Note**: Remember to generate the documentation before serving it.
+Refer the [dbt commands](https://docs.getdbt.com/reference/dbt-commands) for more details.
+
+### Lineage Graph
+![image](https://github.com/avishka-nable/Dbt-Airflow-Demo/assets/109670592/4e772e55-ec26-4e1a-8058-f5314c783a3d)
+
+
 
 
