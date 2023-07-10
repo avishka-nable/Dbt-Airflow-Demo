@@ -53,7 +53,6 @@ Before running this project, ensure that you have the following prerequisites in
    ```sh
    cd dbt-project
 
-**To build the data models and transform your data, follow these steps:**  
 3. Test the database connection and show information for debugging purposes ####
    ```sh
    dbt debug
