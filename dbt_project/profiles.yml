@@ -1,0 +1,25 @@
+dbt_project:
+  outputs:
+    dev:
+      account: [Replace your snowflake account id]
+      database: [Replace your snowflake database id]
+      password: [Replace your snowflake password id]
+      role: ACCOUNTADMIN
+      schema: DEMO_03142023
+      threads: 10
+      type: snowflake
+      user: [Replace your snowflake user id]
+      warehouse: COMPUTE_WH
+      
+    prod:
+      account: [Replace your snowflake account id]
+      database: [Replace your snowflake database id]
+      password: [Replace your snowflake password id]
+      role: ACCOUNTADMIN
+      schema: DEMO_03142023
+      threads: 10
+      type: snowflake
+      user: [Replace your snowflake user id]
+      warehouse: COMPUTE_WH
+  target: dev
+  
