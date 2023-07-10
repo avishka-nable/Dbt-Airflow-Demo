@@ -75,7 +75,7 @@ This command will load csv files located in the seed-paths directory of this dbt
    ```
 Running this command will create or update the tables/views defined in this project. It applies the transformations defined in the models and loads the data into the target database.
 
-##### If you want to perform a full refresh of the data models, including dropping and recreating the tables/views, use the following command: #####
+##### If you want to perform a full refresh of the data models, including dropping and recreating the tables/views, use the following command: 
    ```sh
    dbt run --full-refresh
    ```
