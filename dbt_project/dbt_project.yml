@@ -24,6 +24,14 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+seeds:
+  dbt_project:
+    +schema: source
+    yt:
+      +column_types:
+        Subscriber_Count: varchar(32)
+        Video_Views: varchar(32)
+        Video_Count: varchar(32)
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -36,3 +44,9 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+    analysis:
+      +materialized: table
+      +schema: analysis
+    transformation:
+      +materialized: table
+      +schema: transformation
