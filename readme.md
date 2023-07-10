@@ -63,7 +63,7 @@ Before running this project, ensure that you have the following prerequisites in
    dbt deps
    ```
 
-5. Load CSV files into the database #####
+5. Load CSV files into the database
    ```sh
    dbt seed
    ```
