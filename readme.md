@@ -31,11 +31,11 @@ To get started with the project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/dbt-snowflake-airflow-project.git
+   git clone [https://github.com/your-username/dbt-snowflake-airflow-project.git](https://github.com/avishka-nable/Dbt-Airflow-Demo.git)
 
 2. Navigate to the project directory
    ```bash
-   cd dbt-snowflake-airflow-project
+   cd dbt-project
 
 3. Build the Docker image and start the containers:
    ```bash
@@ -63,6 +63,18 @@ The project directory has the following structure:
 -**docker-compose.yml**: Defines the services and their configurations for Docker Compose.  
 -**dags**: Contains Airflow related files, including DAGs that define the workflows.  
 -**dbt_project**: Contains dbt models that define the transformations to be applied on Snowflake data.  
+
+## Configuration
+1. Open the dbt_project.yml file and update the necessary configurations, such as **target database**, **credentials**, and other project-specific settings.
+2. Configure your database connection by creating a **profiles.yml** file in the ~/.dbt directory. Refer to the [dbt Profiles Documentation](https://docs.getdbt.com/reference/warehouse-profiles) for more details.
+
+## Workflow
+
+1. Create the necessary tables and data structures in Snowflake using the provided SQL scripts in the snowflake directory.
+2. Define your dbt models in the dbt directory. These models will define the transformations to be applied on the data in Snowflake.
+3. Create DAGs in the airflow/dags directory to orchestrate the execution of dbt tasks. The provided dbt_dag.py file serves as a starting point.
+4. Start the Airflow scheduler and web server using Docker Compose. Visit http://localhost:8080 in your web browser to access the Airflow UI.
+5. Enable and trigger the desired DAG(s) in the Airflow UI to initiate the dbt transformation process.
 
 
 
