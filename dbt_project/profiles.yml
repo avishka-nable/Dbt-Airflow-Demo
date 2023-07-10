@@ -1,38 +1,25 @@
-dbt_demo:
-  outputs:
-    dev:
-      account: wquvqrj-az75828
-      database: DEMO
-      password: P#ssw0rd
-      role: ACCOUNTADMIN
-      schema: DEMO_03142023
-      threads: 10
-      type: snowflake
-      user: AvishkaHashenu
-      warehouse: COMPUTE_WH
-  target: dev
 dbt_project:
   outputs:
     dev:
-      account: wquvqrj-az75828
-      database: DEMO
-      password: P#ssw0rd
+      account: [Replace your snowflake account id]
+      database: [Replace your snowflake database id]
+      password: [Replace your snowflake password id]
       role: ACCOUNTADMIN
       schema: DEMO_03142023
       threads: 10
       type: snowflake
-      user: AvishkaHashenu
+      user: [Replace your snowflake user id]
       warehouse: COMPUTE_WH
       
     prod:
-      account: wquvqrj-az75828
-      database: DEMO
-      password: P#ssw0rd
+      account: [Replace your snowflake account id]
+      database: [Replace your snowflake database id]
+      password: [Replace your snowflake password id]
       role: ACCOUNTADMIN
       schema: DEMO_03142023
       threads: 10
       type: snowflake
-      user: AvishkaHashenu
+      user: [Replace your snowflake user id]
       warehouse: COMPUTE_WH
   target: dev
   
