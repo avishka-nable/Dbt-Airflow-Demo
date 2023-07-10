@@ -51,7 +51,7 @@ Before running this project, ensure that you have the following prerequisites in
 
 2. Navigate to the project directory:
    ```sh
-   cd dbt-project
+   cd dbt_project
 
 3. Test the database connection and show information for debugging purposes
    ```sh
