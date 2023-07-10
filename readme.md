@@ -59,10 +59,10 @@ The project directory has the following structure:
 │   │   └── transformation  
 │   └── dbt_project.yml  
 │   └── profiles.yml  
-
--**docker-compose.yml**: Defines the services and their configurations for Docker Compose.
--**dags**: Contains Airflow related files, including DAGs that define the workflows.
--**dbt_project**: Contains dbt models that define the transformations to be applied on Snowflake data.
+  
+-**docker-compose.yml**: Defines the services and their configurations for Docker Compose.  
+-**dags**: Contains Airflow related files, including DAGs that define the workflows.  
+-**dbt_project**: Contains dbt models that define the transformations to be applied on Snowflake data.  
 
 
 
