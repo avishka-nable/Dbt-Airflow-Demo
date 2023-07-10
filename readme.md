@@ -85,12 +85,13 @@ This command ensures that the data models reflect the latest state of the source
 
 The project directory has the following structure:  
 .  
-├── docker-compose.yml  
-├── dags  
-│   ├── init.py  
-│   ├── analysis.py  
-│   ├── tranformation.py  
-│   └── ...  
+├── dockerairflow  
+│   ├── dags  
+│   │   ├── init.py  
+│   │   ├── analysis.py  
+│   │   ├── tranformation.py  
+│   │   └── ...  
+│   ├── docker-compose.yaml   
 ├── dbt_project  
 │   ├── models  
 │   │   ├── analysis  
