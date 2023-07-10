@@ -86,18 +86,19 @@ This command ensures that the data models reflect the latest state of the source
 The project directory has the following structure:  
 .  
 ├── dockerairflow  
-│   ├── dags  
-│   │   ├── init.py  
-│   │   ├── analysis.py  
-│   │   ├── tranformation.py  
-│   │   └── ...  
-│   ├── docker-compose.yaml   
+│      ├──    dags  
+│      │      ├── init.py  
+│      │      ├── analysis.py  
+│      │      ├── tranformation.py  
+│      │      └── ...  
+│      ├── docker-compose.yaml   
+│  
 ├── dbt_project  
-│   ├── models  
-│   │   ├── analysis  
-│   │   └── transformation  
-│   └── dbt_project.yml  
-│   └── profiles.yml  
+│      ├── models  
+│      │      ├── analysis  
+│      │      └── transformation  
+│      └── dbt_project.yml  
+│      └── profiles.yml  
   
 -**docker-compose.yml**: Defines the services and their configurations for Docker Compose.  
 -**dags**: Contains Airflow related files, including DAGs that define the workflows.  
