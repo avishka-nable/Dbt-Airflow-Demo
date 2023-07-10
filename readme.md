@@ -48,18 +48,17 @@ Before running this project, ensure that you have the following prerequisites in
 1. Clone the repository to your local machine:
    ```sh
    git clone https://github.com/nableanalytics/dbt-covid-dw.git
-   ```
+
 2. Navigate to the project directory:
    ```sh
   cd dbt-project
-   ```
 
 **To build the data models and transform your data, follow these steps:**  
-
 3. Test the database connection and show information for debugging purposes ####
    ```sh
    dbt debug
    ```
+
 4. Download dependencies for a project #####
 ```sh
 dbt deps
@@ -82,6 +81,7 @@ Running this command will create or update the tables/views defined in this proj
 dbt run --full-refresh
 ```
 This command ensures that the data models reflect the latest state of the source data.
+
 ## Project Structure
 
 The project directory has the following structure:  
