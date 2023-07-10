@@ -47,7 +47,7 @@ Before running this project, ensure that you have the following prerequisites in
 
 1. Clone the repository to your local machine:
    ```sh
-   git clone https://github.com/nableanalytics/dbt-covid-dw.git
+   git clone https://github.com/avishka-nable/Dbt-Airflow-Demo.git
 
 2. Navigate to the project directory:
    ```sh
