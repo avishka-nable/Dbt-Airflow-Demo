@@ -31,7 +31,7 @@ To get started with the project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/your-username/dbt-snowflake-airflow-project.git](https://github.com/avishka-nable/Dbt-Airflow-Demo.git)
+   git clone https://github.com/avishka-nable/Dbt-Airflow-Demo.git
 
 2. Navigate to the project directory
    ```bash
